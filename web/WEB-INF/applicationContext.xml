@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                     http://www.springframework.org/schema/beans/spring-beans.xsd
+                     http://www.springframework.org/schema/tx
+                     http://www.springframework.org/schema/tx/spring-tx.xsd
+                     http://www.springframework.org/schema/aop
+                     http://www.springframework.org/schema/aop/spring-aop.xsd
+                     http://www.springframework.org/schema/context  
+   					 http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<!-- DB配置文件读入
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>
+					classpath:com/lala/aibaobei/config/jdbc.properties
+				</value>
+			</list>
+		</property>
+	</bean>-->
+
+	<!-- 配置数据源
+
+	<bean id="dataSource"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass" value="${jdbc.driver}" />
+		<property name="jdbcUrl" value="${jdbc.url}" />
+		<property name="user" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="minPoolSize" value="10" />
+		<property name="maxPoolSize" value="15" />
+		<property name="maxIdleTime" value="5" />
+		<property name="acquireIncrement" value="5" />
+		<property name="maxStatements" value="0" />
+		<property name="initialPoolSize" value="10" />
+		<property name="idleConnectionTestPeriod" value="1" />
+	</bean>-->
+
+	<!-- 配置SqlSessionFactoryBean 
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"/>
+		<property name="configLocation" value="classpath:com/lala/aibaobei/config/configuration.xml"/>-->
+		<!-- mapper配置路径 
+		<property name="mapperLocations" value="classpath:com/lala/aibaobei/mapper/*Mapper.xml"/>
+	</bean>
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">  
+    	<constructor-arg index="0" ref="sqlSessionFactory"/>  
+	</bean>-->
+	<!-- 事物管理配置 
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource">
+			<ref local="dataSource" />
+		</property>
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager" />-->
+	
+	<!-- 	<context:annotation-config/> 使用annotation 自动注册bean,并保证@Required,@Autowired的属性被注入	-->
+	<context:component-scan base-package="resource" />
+	
+
+	<!-- 计划任务 
+	<import	resource="classpath:/com/lala/mendiantong/config/task_spring.xml" />-->
+
+
+</beans>
