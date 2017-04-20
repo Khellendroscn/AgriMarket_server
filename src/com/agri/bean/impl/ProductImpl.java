@@ -3,6 +3,7 @@ package com.agri.bean.impl;
 import com.agri.bean.OrderEvaluate;
 import net.khe.db2.annotations.*;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
@@ -11,6 +12,7 @@ import java.util.List;
 /**
  * Created by hyc on 2017/4/3.
  */
+@XmlRootElement
 @DBTable({"product"})
 public class ProductImpl implements com.agri.bean.Product {
     @SqlInt

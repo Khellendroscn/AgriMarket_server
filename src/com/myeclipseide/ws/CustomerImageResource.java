@@ -2,6 +2,7 @@ package com.myeclipseide.ws;
 
 import java.sql.*;
 
+import javax.inject.Singleton;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -13,6 +14,7 @@ import com.agri.db.DBPoolManager;
 import net.khe.db2.DBQuaryException;
 import net.khe.db2.DataBase;
 
+@Singleton
 @Produces({"application/xml" })
 @Path("customerimage")
 public class CustomerImageResource {

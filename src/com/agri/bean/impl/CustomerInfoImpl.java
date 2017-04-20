@@ -2,6 +2,7 @@ package com.agri.bean.impl;
 
 import net.khe.db2.annotations.*;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
 /**
  * Created by hyc on 2017/4/3.
  */
+@XmlRootElement
 @DBTable({"customer_info"})
 public class CustomerInfoImpl implements com.agri.bean.CustomerInfo {
     @Constraints(primaryKey = true, alloNull = false, autoIncrement = true)

@@ -3,12 +3,14 @@ package com.agri.bean.impl;
 import com.agri.bean.Order;
 import net.khe.db2.annotations.*;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by hyc on 2017/4/4.
  */
+@XmlRootElement
 @DBTable({"farm"})
 public class FarmImpl implements com.agri.bean.Farm {
     @SqlInt

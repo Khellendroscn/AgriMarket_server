@@ -2,11 +2,13 @@ package com.agri.bean.impl;
 
 import net.khe.db2.annotations.*;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
 /**
  * Created by hyc on 2017/4/5.
  */
+@XmlRootElement
 @DBTable({"order_evaluate"})
 public class OrderEvaluateImpl implements com.agri.bean.OrderEvaluate {
     @SqlInt

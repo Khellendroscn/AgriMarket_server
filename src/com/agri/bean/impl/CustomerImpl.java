@@ -1,6 +1,8 @@
 package com.agri.bean.impl;
 
 import net.khe.db2.annotations.*;
+
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,6 +10,7 @@ import java.util.List;
 /**
  * Created by hyc on 2017/4/3.
  */
+@XmlRootElement
 @DBTable({"customer"})
 public class CustomerImpl implements com.agri.bean.Customer {
     @SqlInt

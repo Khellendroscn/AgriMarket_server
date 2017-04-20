@@ -2,6 +2,7 @@ package com.myeclipseide.ws;
 
 import java.sql.SQLException;
 
+import javax.inject.Singleton;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -14,6 +15,7 @@ import net.khe.db2.DBSession;
 import net.khe.db2.DBWriteException;
 import net.khe.db2.DataBase;
 
+@Singleton
 @Produces({"application/xml" })
 @Path("customeradd")
 public class CustomerAddResource {

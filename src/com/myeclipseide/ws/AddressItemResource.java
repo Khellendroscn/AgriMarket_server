@@ -10,12 +10,14 @@ import net.khe.db2.DBSession;
 import net.khe.db2.DBWriteException;
 import net.khe.db2.DataBase;
 
+import javax.inject.Singleton;
 import javax.ws.rs.*;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Singleton
 @Produces({"application/xml" })
 @Path("address")
 public class AddressItemResource {

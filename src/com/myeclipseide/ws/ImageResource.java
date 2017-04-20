@@ -2,6 +2,7 @@ package com.myeclipseide.ws;
 
 import java.io.*;
 
+import javax.inject.Singleton;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
@@ -18,7 +19,6 @@ import net.khe.db2.DataBase;
 
 //@Component
 @Path("image")
-//@Singleton
 public class ImageResource  {
 	private DBPoolManager manager = DBPoolManager.getInstance();
 	@POST

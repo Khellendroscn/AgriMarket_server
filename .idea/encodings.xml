@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/app-routing.module.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/app.component.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/app.component.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/app.component.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/app.module.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/event/event.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/event/login-event.service.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/event/observer.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/login-form.component.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/login-form.component.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/login-form.component.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/login-form.component.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/model/customer.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/model/news.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/model/state.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/news.component.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/news.component.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/news.component.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/service/checkcode.service.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/service/customer.service.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/service/login.service.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/app/service/news.service.ts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../agri_web/src/styles.css" charset="UTF-8" />
+  </component>
+</project>

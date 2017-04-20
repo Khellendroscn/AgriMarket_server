@@ -3,12 +3,14 @@ package com.agri.bean.impl;
 import com.agri.bean.OrderEvaluate;
 import net.khe.db2.annotations.*;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.math.BigDecimal;
 import java.util.Date;
 
 /**
  * Created by hyc on 2017/4/4.
  */
+@XmlRootElement
 @DBTable({"order_"})
 public class OrderImpl implements com.agri.bean.Order {
     @SqlInt

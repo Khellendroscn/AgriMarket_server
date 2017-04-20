@@ -5,11 +5,13 @@ import net.khe.db2.annotations.DBTable;
 import net.khe.db2.annotations.SqlDate;
 import net.khe.db2.annotations.SqlInt;
 
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
 /**
  * Created by hyc on 2017/4/5.
  */
+@XmlRootElement
 @DBTable({"exihibition"})
 public class ExhibitionImpl implements com.agri.bean.Exhibition {
     @SqlInt

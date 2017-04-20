@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Singleton;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -16,6 +17,7 @@ import com.agri.db.DBPoolManager;
 import net.khe.db2.DBQuaryException;
 import net.khe.db2.DataBase;
 
+@Singleton
 @Produces({"application/xml" })
 @Path("farmoutline")
 public class FarmResource {

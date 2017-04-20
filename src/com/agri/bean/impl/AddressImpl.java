@@ -2,9 +2,12 @@ package com.agri.bean.impl;
 
 import net.khe.db2.annotations.*;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by hyc on 2017/4/3.
  */
+@XmlRootElement
 @DBTable({"address"})
 public class AddressImpl implements com.agri.bean.Address {
     @Constraints(primaryKey = true,alloNull = false,autoIncrement = true)

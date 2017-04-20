@@ -4,6 +4,7 @@ import java.sql.*;
 import java.util.*;
 import java.util.Date;
 
+import javax.inject.Singleton;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -22,6 +23,7 @@ import net.khe.db2.DBSession;
 import net.khe.db2.DBWriteException;
 import net.khe.db2.DataBase;
 
+@Singleton
 @Produces({"application/xml" })
 @Path("shoppingcart")
 public class ShoppingCartResource {

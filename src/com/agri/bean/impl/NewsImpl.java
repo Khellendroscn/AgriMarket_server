@@ -2,13 +2,17 @@ package com.agri.bean.impl;
 
 import net.khe.db2.annotations.*;
 
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.Date;
 
 /**
  * Created by hyc on 2017/4/5.
  */
+@XmlRootElement
 @DBTable({"news"})
 public class NewsImpl implements com.agri.bean.News {
+    @XmlTransient
     @SqlInt
     @Constraints(primaryKey = true, alloNull = false, autoIncrement = true)
     private int id;

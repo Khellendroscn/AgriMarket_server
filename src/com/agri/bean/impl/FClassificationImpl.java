@@ -5,9 +5,12 @@ import net.khe.db2.annotations.DBTable;
 import net.khe.db2.annotations.SqlInt;
 import net.khe.db2.annotations.SqlString;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by hyc on 2017/4/5.
  */
+@XmlRootElement
 @DBTable({"fclassification"})
 public class FClassificationImpl implements com.agri.bean.FClassification {
     @SqlInt

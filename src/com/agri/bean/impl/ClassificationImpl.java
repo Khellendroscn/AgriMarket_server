@@ -2,9 +2,12 @@ package com.agri.bean.impl;
 
 import net.khe.db2.annotations.*;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by hyc on 2017/4/5.
  */
+@XmlRootElement
 @DBTable({"classification"})
 public class ClassificationImpl implements com.agri.bean.Classification {
     @SqlInt
